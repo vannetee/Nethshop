@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neth-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand "href="#"> NEN-SHOPL</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-3" type="search" placeholder="Search..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+
+                        <li class="nav-item">
+                                <a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" href="#"><b>About</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="#"><b>Contect</b>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+          
+        <div class="offcanvas offcanvas-start bg-dark dark" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header bg-dark-dzrk">
+              <h5 class="offcanvas-title text-warning" id="staticBackdropLabel">About</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- <div>
+                    <div class="conect">
+                        <h2>NET-SHOP</h2>
+                        <h3><b>T-shirt</b>
+                            <img class="img-sm" width="100px" height="100px" src="Img_2_1024x1024.webp" alt="">
+                        </h3>
+                        <h3>Nike</h3>
+                        <h3>adidas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vel voluptatum officia quidem. Incidunt,
+                            architecto. Cumque quae, quia provident adipisci ratione est eos, dolorem, in velit totam maiores
+                            praesentium quasi.</p>
+                    </div>
+                </div> -->
+                <div>
+                    <div class="conect">
+                        <h2 class="h2 text-warning">NET-SHOP</h2>
+                        <h4 class="h4 text-warning">T-shirt
+                            <img class="img-sm" width="70px" height="70px" src="Img_2_1024x1024.webp" alt="">
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. olorem, in velit totam maiores
+                            praesentium quasi.</p>
+                        <h4 class="h4 text-warning">NIKE    
+                            <img class="img-sm" width="70px" height="70px" src="logonike.png" alt="">
+                          
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. olorem, in velit totam maiores
+                            praesentium quasi.</p>
+                        <h3 class="h4 text-warning">Adidas
+                            <img class="img-sm" width="70px" height="70px" src="adidas.png" alt="">
+                            
+                        </h3>
+                        <h4>adidas</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vel voluptatum officia quidem. Incidunt,
+                            architecto. Cumque quae, quia provident adipisci ratione est eos, dolorem, in velit totam maiores
+                            praesentium quasi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">TEST BOOSTRAP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse text-wt">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active" href="#">Home</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#">Pricing</a>
+                </div>
+              </div>
+            </div>
+          </nav> -->
+    </header>
+
+    <main>
+
+        <div class="modal" tabindex="-1" id="booking-modal">
+            <div class="modal-dialog">
+                <div class="modal-content bg-premaeri">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-outline-wh "><b>NIKe</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-floating">
+                            <img width="100px" height="100px" src="logonike.png" alt="">
+                            <form action="#">
+                                <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                <label for="email1"></label>
+                            </form>
+
+                            <form action="#">
+                                <select id="select1" class="form-select" placeholder="Select...">
+                                    <option>
+                                        <h5>Great A-$35</h5>
+                                    </option>
+                                    <option>
+                                        <h5>Great B-$30</h5>
+                                    </option>
+                                    <option>
+                                        <h5>Great C-$25</h5>
+                                    </option>
+                                </select>
+                                <label for="select1"></label>
+                            </form>
+
+                            <form action="#">
+                                <select id="Size" class="form-select" placeholder="Select...">
+                                    <option>Over-size</option>
+                                    <option>
+                                        <h5>41</h5>
+                                    </option>
+                                    <option>
+                                        <h5>40</h5>
+                                    </option>
+                                    <option>
+                                        <h5>38</h5>
+                                    </option>
+                                    <option>
+                                        <h5>35</h5>
+                                    </option>
+                                </select>
+                                <label for="Size"></label>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                            aria-label="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- page2 -->
+        <div class="modal" tabindex="-1" id="shoping-modal">
+            <div class="modal-dialog">
+                <div class="modal-content bg-premaeri">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-outline-wh "><b>T-shirt</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-floating">
+                            <img width="100px" height="100px" src="Img_2_1024x1024.webp" alt="">
+                            <form action="#">
+                                <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                <label for="email1"></label>
+                            </form>
+
+                            <form action="#">
+                               <select id="select1" class="form-select" placeholder="Select...">
+                                    <option>
+                                        <h5>Great A-$99.9</h5>
+                                    </option>
+                                    <option>
+                                        <h5>Great B-$85.99</h5>
+                                    </option>
+                                    <option>
+                                        <h5>Great C-$65.80</h5>
+                                    </o ption>
+                                </select>
+                                <label for="select1"></label>
+                            </form>
+
+                            <form action="#">
+                                <select id="Size" class="form-select" placeholder="Select...">
+                                    <option>Over-size</option>
+                                    <option>
+                                        <h5>2xl</h5>
+                                    </option>
+                                    <option>
+                                        <h5>xl</h5>
+                                    </option>
+                                    <option>
+                                        <h5>M</h5>
+                                    </option>
+                                    <option>
+                                        <h5>S</h5>
+                                    </option>
+                                </select>
+                                <label for="Size"></label>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success text-warning" data-bs-dismiss="modal"   aria-label="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page3 -->
+
+        <div class="modal" tabindex="-1" id="buying-modal">
+            <div class="modal-dialog">
+                <div class="modal-content bg-premaeri">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-outline-wh "><b>Adidas</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-floating">
+                            <img width="100px" height="100px" src="adidas.png" alt="">
+                            <form action="#">
+                                <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                <label for="email1"></label>
+                            </form>
+
+                            <form action="#">
+                                <select id="select1" class="form-select" placeholder="Select...">
+                                    <option>
+                                        <h5>Great A-$99.9</h5>
+                                    </option>
+                                    <option>
+                                        <h5>Great B-$85.99</h5>
+                                    </option>
+                                    <option>
+                                        <h5>Great C-$65.80</h5>
+                                    </option>
+                                </select>
+                                <label for="select1"></label>
+                            </form>
+
+                            <form action="#">
+                                <select id="Size" class="form-select" placeholder="Select...">
+                                    <option>Over-size</option>
+                                    <option>
+                                        <h5>41-40</h5>
+                                    </option>
+                                    <option>
+                                        <h5>39-36</h5>
+                                    </option>
+                                    <option>
+                                        <h5>35</h5>
+                                    </option>
+                                    <option>
+                                        <h5>33</h5>
+                                    </option>
+                                </select>
+                                <label for="Size"></label>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success text-warning" data-bs-dismiss="modal"   aria-label="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="Img_2_1024x1024.webp" class="d-block  w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-5 d-relative d-sm-block">
+                        <h2 class="mt-5"><b>Vannet T-shirt</b></h2>
+                        <p class=" fs-3 dislapy-1 text-capitalize">Some representative placeholder content for the first
+                            slide.</p>
+                        <button type="button" class="btn btn-success px-2 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#shoping-modal">View Products</button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="bg3.jpeg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-5 d-relative d-sm-block">
+                        <h2 class=" mt-5"><b>NIKE</b></h2>
+                        <p class=" fs-3 dislapy-1 text-capitalize">Some representative placeholder content for the first
+                            slide.</p>
+                        <button type="button" class="btn btn-success px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#booking-modal">View Products</button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="adiis.avif" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-5 d-relative d-sm-block">
+                        <h2 class=" mt-5"><b>Adidass</b></h2>
+                        <p class=" fs-3 dislapy-1 text-capitalize">Some representative placeholder content for the first
+                            slide.</p>
+                        <button type="button" class="btn btn-success px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#buying-modal">View Products</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel  " data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 bg-dark">
+        <div class="col">
+            <div class="card">
+                <img src="t1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$15.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel"><b>NET-shirt</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="t1.webp" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>Over-size</option>
+                                            <option>
+                                                <h5>2xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>M</h5>
+                                            </option>
+                                            <option>
+                                                <h5>S</h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card2 -->
+
+        <div class="col">
+            <div class="card">
+                <img src="t2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sorting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sorting-modal" tabindex="-1" aria-labelledby="Sorting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sorting-modal"><b>NET-shirt</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="t2.webp" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o xption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>Over-size</option>
+                                            <option>
+                                                <h5>2xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>M</h5>
+                                            </option>
+                                            <option>
+                                                <h5>S</h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- card3 -->
+
+        <div class="col">
+            <div class="card">
+                <img src="t3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$14.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+    
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#sor3ting-modal">
+                        Buy Now
+                    </button>
+    
+                <!-- Modal -->
+                    <div class="modal fade" id="sor3ting-modal" tabindex="-1" aria-labelledby="sor3ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="sor3ting-modal"><b>NET-shirt</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="t3.jpg" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                            <select id="select1" class="form-select" placeholder="Select...">
+                                                <option>
+                                                <h5>Great A-$16.89</h5>
+                                                </option>
+                                                <option>
+                                                    <h5>Great B-$15.99</h5>
+                                                </option>
+                                                <option>
+                                                    <h5>Great C-$14.80</h5>
+                                                </option>
+                                            </select>
+                                        <label for="select1"></label>
+    
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>Over-size</option>
+                                            <option>
+                                                <h5>2xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>M</h5>
+                                            </option>
+                                            <option>
+                                                <h5>S</h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- t-shirt2 -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 bg-dark">
+        <div class="col">
+            <div class="card">
+                <img src="t4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$16.69</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#example4Modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="example4Modal" tabindex="-1" aria-labelledby="example4ModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="example4ModalLabel"><b>NET-shirt</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="t4.jpg" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.69</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>Over-size</option>
+                                            <option>
+                                                <h5>2xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>M</h5>
+                                            </option>
+                                            <option>
+                                                <h5>S</h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card5 -->
+
+        <div class="col">
+            <div class="card">
+                <img src="t5.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$14.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sor5ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sor5ting-modal" tabindex="-1" aria-labelledby="Sor5ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sor5ting-modal"><b>NET-shirt</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="t5.webp" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$14.67</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>Over-size</option>
+                                            <option>
+                                                <h5>2xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>M</h5>
+                                            </option>
+                                            <option>
+                                                <h5>S</h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- card6 -->
+
+        <div class="col">
+            <div class="card">
+                <img src="tt6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$14.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+    
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#sor6ting-modal">
+                        Buy Now
+                    </button>
+    
+                <!-- Modal -->
+                    <div class="modal fade" id="sor6ting-modal" tabindex="-1" aria-labelledby="sor6ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="sor6ting-modal"><b>NET-shirt</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="tt6.jpg" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                            <select id="select1" class="form-select" placeholder="Select...">
+                                                <option>
+                                                <h5>Great A-$16.89</h5>
+                                                </option>
+                                                <option>
+                                                    <h5>Great B-$15.99</h5>
+                                                </option>
+                                                <option>
+                                                    <h5>Great C-$14.67</h5>
+                                                </option>
+                                            </select>
+                                        <label for="select1"></label>
+    
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>Over-size</option>
+                                            <option>
+                                                <h5>2xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>xl</h5>
+                                            </option>
+                                            <option>
+                                                <h5>M</h5>
+                                            </option>
+                                            <option>
+                                                <h5>S</h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page nike -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 bg-dark">
+        <div class="col">
+            <div class="card">
+                <img src="n1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$15.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampn1leModal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampn1leModal" tabindex="-1" aria-labelledby="exampn1leModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampn1leModalLabel"><b>NEKI</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="n1.webp" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$15.67</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$13.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$10.76</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>41</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5>35</h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- card2 -->
+
+        <div class="col">
+            <div class="card">
+                <img src="n2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sorn2ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sorn2ting-modal" tabindex="-1" aria-labelledby="Sorn2ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sorn2ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="n2.webp" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$15.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$14.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$13.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>41</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5>35</h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- card3 -->
+
+        <div class="col">
+            <div class="card">
+                <img src="n3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$14.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+    
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#sorn3ting-modal">
+                        Buy Now
+                    </button>
+    
+                <!-- Modal -->
+                    <div class="modal fade" id="sorn3ting-modal" tabindex="-1" aria-labelledby="sorn3ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="sor3ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="n3.jpg" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                            <select id="select1" class="form-select" placeholder="Select...">
+                                                <option>
+                                                <h5>Great A-$16</h5>
+                                                </option>
+                                                <option>
+                                                    <h5>Great B-$15</h5>
+                                                </option>
+                                                <option>
+                                                    <h5>Great C-$14.60</h5>
+                                                </option>
+                                            </select>
+                                        <label for="select1"></label>
+    
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>41</h5>
+                                            </option>
+                                            <option>
+                                                <h5>39</h5>
+                                            </option>
+                                            <option>
+                                                <h5>37</h5>
+                                            </option>
+                                            <option>
+                                                <h5>35</h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pagenike2 -->
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 bg-dark">
+        <div class="col">
+            <div class="card">
+                <img src="n4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$15.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampn4leModal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampn4leModal" tabindex="-1" aria-labelledby="exampn4leModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampn4leModalLabel"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="n4.jpg" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </option>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>42</option>
+                                            <option>
+                                                <h5>41</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5>35</h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                  
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- nike5 -->
+
+        <div class="col">
+            <div class="card">
+                <img src="n5.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sorn5ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sorn5ting-modal" tabindex="-1" aria-labelledby="Sorn5ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sorn5ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="n5.webp" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5></h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- nike6 -->
+
+        <div class="col">
+            <div class="card">
+                <img src="n6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural <b>$14.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+    
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#sorn6ting-modal">
+                        Buy Now
+                    </button>
+    
+                <!-- Modal -->
+                    <div class="modal fade" id="sorn6ting-modal" tabindex="-1" aria-labelledby="sorn6ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="sorn6ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="n6.jpg" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                            <select id="select1" class="form-select" placeholder="Select...">
+                                                <option>
+                                                <h5>Great <A-113></A-113>.89</h5>
+                                                </option>
+                                                <option>
+                                                    <h5>Great B-$12.99</h5>
+                                                </option>
+                                                <option>
+                                                    <h5>Great C-$10.80</h5>
+                                                </option>
+                                            </select>
+                                        <label for="select1"></label>
+    
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5>35</h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-5 g-4 bg-dark">
+        <div class="col">
+            <div class="card">
+                <img src="di1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text"><b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sornd1ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sornd1ting-modal" tabindex="-1" aria-labelledby="Sornd1ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sornd1ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="di1.jpeg" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5></h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="di2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text"><b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sorndi2ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sorndi2ting-modal" tabindex="-1" aria-labelledby="Sorndi2ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sorndi2ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="di2.jpg" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5></h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="di3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text"><b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sorndi3ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sorndi3ting-modal" tabindex="-1" aria-labelledby="Sorndi3ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sorndi3ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="di3.jpg" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5></h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="di4.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text"><b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sorndi4ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sorndi4ting-modal" tabindex="-1" aria-labelledby="Sorndi4ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sorndi4ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="di4.avif" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5></h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="dd5.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text"><b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sorndi5ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sorndi5ting-modal" tabindex="-1" aria-labelledby="Sorndi5ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sorndi5ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="dd5.avif" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5></h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                                   
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- ADIDAS -->
+
+    <div class="row row-cols-1 row-cols-md-5 g-4 bg-dark">
+        <div class="col">
+            <div class="card">
+                <img src="d7.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text"><b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sornd7ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sornd7ting-modal" tabindex="-1" aria-labelledby="Sornd7ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sornd7ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="d7.webp" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5></h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="d8.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text"><b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sorndi8ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sorndi8ting-modal" tabindex="-1" aria-labelledby="Sorndi8ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sorndi8ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="d8.avif" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5></h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="d9.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text"><b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sorndi9ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sorndi9ting-modal" tabindex="-1" aria-labelledby="Sorndi9ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sorndi9ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="d9.avif" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5></h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="d10.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text"><b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sorndi10ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sorndi10ting-modal" tabindex="-1" aria-labelledby="Sorndi10ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sorndi10ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="d10.webp" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5></h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button onclick="function1()" class="btn btn-success">Submit</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <img src="d11.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NET-shorp</h5>
+                    <p class="card-text"><b>$16.67</b></p>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+                </div>
+                <div class="shorp">
+                    <i class="fa-solid fa-cart-shopping fs-4" style="color: #63E6BE;"></i>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#Sorndi11ting-modal">
+                        Buy Now
+                    </button>
+        
+                    <!-- Modal -->
+                    <div class="modal fade" id="Sorndi11ting-modal" tabindex="-1" aria-labelledby="Sorndi11ting-modal"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Sorndi11ting-modal"><b>NIKE</b></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="d11.webp" width="200px" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, porro!</p>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <form action="">
+                                        <input id="email1" type="email" placeholder="Email Adress..." class="form-control">
+                                        <label for="email1"></label>
+                                        <select id="select1" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>Great A-$18.89</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great B-$16.99</h5>
+                                            </option>
+                                            <option>
+                                                <h5>Great C-$15.80</h5>
+                                                </o ption>
+                                        </select>
+                                        <label for="select1"></label>
+        
+                                        <select id="Size" class="form-select" placeholder="Select...">
+                                            <option>
+                                                <h5>42</h5>
+                                            </option>
+                                            <option>
+                                                <h5>40</h5>
+                                            </option>
+                                            <option>
+                                                <h5>38</h5>
+                                            </option>
+                                            <option>
+                                                <h5></h5>
+                                            </option>
+                                        </select>
+                                        <label for="Size"></label>
+                                    </form>
+        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+                                    <button onclick="function1()" class="btn btn-success">Submit</button>                                  
+                                    <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Buy now</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROMORTION -->
+    <div class="container">
+        <div class="row mt-4 ">
+            <div class="col shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <div class="col mt-4">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://img.freepik.com/free-vector/way-concept-illustration_114360-1191.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h5 class="card-title fs-3 text-warning"><b><i>Delivery</i></b></h5>
+                              <p class="card-text">The <b><i class="text-warning">Neth-Shop</i></b> have promorrrtion  some of product that <i class="text-success">free</i> delivery huury up fan fan!</p>
+                              <div class="icons mt-5">
+                                <i class="fa-solid fa-truck fs-4" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-cart-shopping fs-4" style="color: #74C0FC;"></i>
+                                <i class="fa-solid fa-shop fs-4" style="color: #B197FC;"></i>
+                                <a href="view.html" class=""><i class="text-success fs-5">Veiw</i></a>
+                              </div>
+
+                              <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <div class="col mt-4">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://www.shutterstock.com/image-vector/50-sale-sign-colour-confetti-260nw-313945733.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h5 class="card-title fs-3 text-warning"><b><i>OFF 50%</i></b></h5>
+                              <p class="card-text">The <b><i class="text-warning">Neth-Shop</i></b> have promorrrtion  some of product <i class="text-success">discound 50%</i>of <b></b></p>
+                              <div class="icons mt-5">
+                                <i class="fa-solid fa-truck fs-4" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-cart-shopping fs-4" style="color: #74C0FC;"></i>
+                                <i class="fa-solid fa-shop fs-4" style="color: #B197FC;"></i>
+                                <a href="view1.html" class=""><i class="text-success fs-5">Veiw</i></a>
+                              </div>
+
+                              <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+                <div class="col mt-4">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-6">
+                            <img src="https://activaboualaa.com/cdn/shop/collections/buy-1-get-1-free_96807-382.webp?v=1709152927" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h5 class="card-title fs-3 text-warning"><b><i>BUY 1FREE1</i></b></h5>
+                              <p class="card-text">The <b><i class="text-warning">Neth-Shop</i></b> have promorrrtion  some of product that <i class="text-success">free</i><i class="text-success">Buy1 free 1</i></p>
+                              <div class="icons mt-5">
+                                <i class="fa-solid fa-truck fs-4" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-cart-shopping fs-4" style="color: #74C0FC;"></i>
+                                <i class="fa-solid fa-shop fs-4" style="color: #B197FC;"></i>
+                                <a href="view2.html" class=""><i class="text-success fs-5">Veiw</i></a>
+                              </div>
+
+                              <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+                          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>We are committed to providing the best solutions for our customers. Our team is dedicated to ensuring the highest quality service and satisfaction.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Neth-Shop. All Rights Reserved.</p>
+        <img src="https://imagery.go24.app/media/upload/Company/27603/024062715563527603.png" alt="Image 1" class="img-thumbnail mx-2" style="width: 80px; height: auto;">
+        <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple115/v4/c2/e0/29/c2e029bf-e7e1-b8b6-e715-e94ab061f701/source/512x512bb.jpg" alt="Image 2" class="img-thumbnail mx-2" style="width: 80px; height: auto;">
+        <img src="https://sec4business.mekonginstitute.org/public/uploads/company-profile/logos/logo-58-1509523122.jpg" alt="Image 3" class="img-thumbnail mx-2" style="width: 80px; height: auto;">
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- bottom -->
+    
+    <!--  -->
+
+
+    <!-- <div class="row row-cols-1 row-cols-md-3 g-3 bg-dark"> -->
+   
+    <script type="text/javascript">
+            function function1()
+        {  
+                // alert("Hello everyone");
+            swal("Succesee!", "Wait your products beeb save. Thank you!", "success");
+        }
+    </script>
+
+
+</body>
+
+</html>
